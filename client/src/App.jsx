@@ -10,18 +10,18 @@ import Preview from './pages/Preview'
 const App = () => {
   return (
     <>
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='login' element={<Login />} />
-      <Route path='app' element={<Layout />} >
-        <Route index element={<Dashboard />} />
-        <Route path='builder/:resumeId' element={<ResumeBuilder />} />
-      </Route>
-      <Route path='layout' element={<Layout />} />
-      <Route path='view/:resumeId' element={<Preview />} />
-    </Routes>
-    </>
-  )
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='login' element={<Login />} />
+        <Route path='app' element={<Layout />} >
+          <Route index element={<Dashboard />} />
+          <Route path='builder/:resumeId' element={<ResumeBuilder />} />
+        </Route>
+        <Route path='layout' element={<Layout />} />
+        <Route path='view/:resumeId' element={<Preview />} />
+      </Routes>
+      </>     
+      )
 }
 
 export default App

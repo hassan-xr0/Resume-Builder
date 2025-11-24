@@ -20,7 +20,7 @@ const Hero = () => {
       {/* Navbar */}
 
       <nav className="z-50 flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-40 text-sm">
-        <a href="https://prebuiltui.com">
+        <a href="/">
           <img src="/logo.svg" alt="Resume." className="w-auto h-10" />
         </a>
 
@@ -43,13 +43,15 @@ const Hero = () => {
         </div>
 
         <div className="flex gap-2">
-          <Link to={'/app?state=register'}
+          <Link
+            to={"/app?state=register"}
             className="hidden md:block px-6 py-2 bg-green-500 hover:bg-green-700 active:scale-95 transition-all rounded-full text-white"
           >
             Get started
           </Link>
 
-          <Link to={'/app?state=login'}
+          <Link
+            to={"/app?state=login"}
             href=""
             className="hidden md:block px-6 py-2 border active:scale-95 hover:bg-slate-50 transition-all rounded-full text-slate-700 hover:text-slate-900"
           >
@@ -177,21 +179,23 @@ const Hero = () => {
         {/* Headline + CTA */}
 
         <h1 className="text-5xl md:text-6xl font-semibold max-w-5xl text-center mt-4 md:leading-[70px]">
-         Land your dream job with {" "}
+          Land your dream job with{" "}
           <span className=" bg-gradient-to-r from-green-700 to-green-600 bg-clip-text text-transparent text-nowrap">
-            AI-powered {" "}
+            AI-powered{" "}
           </span>{" "}
           resumes.
         </h1>
 
         <p className="max-w-md text-center text-base my-7">
-          Create, edit and download professional resumes with AI-powered assistance.
+          Create, edit and download professional resumes with AI-powered
+          assistance.
         </p>
 
         {/* CTA Buttons */}
 
         <div className="flex items-center gap-4 ">
-          <Link to='/app'
+          <Link
+            to="/app"
             href="/"
             className="bg-green-500 hover:bg-green-600 text-white rounded-full px-9 h-12 m-1 ring-offset-2 ring-1 ring-green-400 flex items-center transition-colors"
           >
